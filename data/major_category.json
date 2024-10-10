@@ -1,0 +1,28 @@
+{
+    "vw_ubi_attraction_ko": {
+        "pg_key": "tourist_place", 
+        "id": 1
+    },
+    "vw_ubi_food_ko": {
+        "pg_key": "restaurant", 
+        "id": 2
+    },
+    "vw_ubi_shopping_ko": {
+        "pg_key": "shopping", 
+        "id": 3},
+    "vw_ubi_accommodations_ko": {
+        "pg_key": "hotel", 
+        "id": 4},
+    "vw_ubi_festival_ko": {
+        "pg_key": "festival", 
+        "id": 5},
+    "vw_ubi_foodie_ko": {
+        "pg_key": "food_tour", 
+        "id": 6},
+    "vw_ubi_recommended_ko": {
+        "pg_key": "theme_travel", 
+        "id": 7},
+    "vw_ubi_maritime_ko": {
+        "pg_key": "marine_leisure", 
+        "id": 8}
+}

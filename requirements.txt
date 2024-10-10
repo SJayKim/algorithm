@@ -1,0 +1,14 @@
+openai
+psycopg-binary
+mysql-connector-python
+transformers
+sentence-transformers
+konlpy
+pandas
+# dotenv-python
+haversine
+scikit-learn
+seaborn
+matplotlib
+sqlalchemy
+requests

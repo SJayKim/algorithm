@@ -1,0 +1,71 @@
+{
+    "ko": {
+        "busan_table": ["vw_ubi_attraction_ko", "vw_ubi_food_ko", "vw_ubi_accommodations_ko", "vw_ubi_shopping_ko", "vw_ubi_festival_ko", "vw_ubi_recommended_ko", "vw_ubi_foodie_ko", "vw_ubi_maritime_ko"],
+        "busan_vector_table": ["vw_ubi_attraction_ko", "vw_ubi_recommended_ko", "vw_ubi_foodie_ko", "vw_ubi_maritime_ko"],
+        "pg_vector_table": "tour_vector",
+        "review_table": "ubi_cntnts_my_review",
+        "pg_restaurant_table": "tour_restaurant_distance",
+        "lang_id": 7,
+        "keyword_mapping": {
+            "관광지": ["명소", "축제", "미식여행", "체험", "테마여행"],
+            "음식점": ["한식", "중식", "일식", "아세안요리", "양식", "해산물", "그릴", "시티투어버스 맛집", "세계음식", "오션뷰 맛집", "파인다이닝", "부산의 노포"],
+            "카페": ["디저트 & 커피", "카페&베이커리"]
+           }       
+      
+    },
+    "en": {
+        "busan_table": ["vw_ubi_attraction_en", "vw_ubi_food_en", "vw_ubi_accommodations_en", "vw_ubi_shopping_en", "vw_ubi_festival_en", "vw_ubi_recommended_en", "vw_ubi_foodie_en", "vw_ubi_maritime_en"],
+        "busan_vector_table": ["vw_ubi_attraction_en", "vw_ubi_recommended_en", "vw_ubi_foodie_en", "vw_ubi_maritime_en"],
+        "pg_vector_table": "tour_vector_en",
+        "review_table": "ubi_cntnts_my_review",
+        "pg_restaurant_table": "tour_restaurant_distance_en",
+        "lang_id": 8,
+        "keyword_mapping":{
+            "Tourist Attraction": ["Tourist Attraction", "Festivals", "Food Tours", "Experience", "Themed Tour"],
+            "Restaurant": ["Korean Cuisine", "Chinese Cuisine", "Japanese Cuisine", "ASEAN cuisine", "Western cuisine", "Seafood", "Grill", "Busan City Tour Bus Restaurants", "A Culinary World Tour in Busan", "Restaurants with Ocean Views", "Fine Dining in Busan", "Busan's Classics"],
+            "Cafe":["Desserts & Coffee", "Cafe & Bakeries"]
+        }
+    },
+    
+    "cn_zh": {
+        "busan_table": ["vw_ubi_attraction_cn", "vw_ubi_food_cn", "vw_ubi_accommodations_cn", "vw_ubi_shopping_cn", "vw_ubi_festival_cn", "vw_ubi_recommended_cn", "vw_ubi_foodie_cn", "vw_ubi_maritime_cn"],
+        "busan_vector_table": ["vw_ubi_attraction_cn", "vw_ubi_recommended_cn", "vw_ubi_foodie_cn", "vw_ubi_maritime_cn"],
+        "pg_vector_table": "tour_vector_cn_zh",
+        "review_table": "ubi_cntnts_my_review",
+        "pg_restaurant_table": "tour_restaurant_distance_cn_zh",
+        "lang_id": 9,
+        "keyword_mapping":{
+            "旅游景点": ["名胜", "庆典", "美食之旅", "体验", "主题旅游"],
+            "餐厅": ["韩餐", "海鲜", "烤肉", "西餐", "日餐", "中餐", "东南亚菜"],
+            "咖啡厅": ["咖啡&烘焙"]
+        }
+    
+    },
+    "cn_tw": {
+        "busan_table": ["vw_ubi_attraction_tw", "vw_ubi_food_tw", "vw_ubi_accommodations_tw", "vw_ubi_shopping_tw", "vw_ubi_festival_tw", "vw_ubi_recommended_tw", "vw_ubi_foodie_tw", "vw_ubi_maritime_tw"],
+        "busan_vector_table": ["vw_ubi_attraction_tw", "vw_ubi_recommended_tw", "vw_ubi_foodie_tw", "vw_ubi_maritime_tw"],
+        "pg_vector_table": "tour_vector_cn_tw",
+        "review_table": "ubi_cntnts_my_review",
+        "pg_restaurant_table": "tour_restaurant_distance_cn_tw",
+        "lang_id": 10,
+        "keyword_mapping": {
+            "旅遊景點": ["名勝", "慶典", "美食旅遊", "體驗", "主題旅遊"],
+            "餐廳": ["韓餐", "海鮮", "烤肉", "西餐", "日餐", "中餐", "東南亞菜"],
+            "咖啡廳": ["咖啡&烘焙"]
+        }
+    },
+    
+    "jp": {
+        "busan_table": ["vw_ubi_attraction_ja", "vw_ubi_food_ja", "vw_ubi_accommodations_ja", "vw_ubi_shopping_ja", "vw_ubi_festival_ja", "vw_ubi_recommended_ja", "vw_ubi_foodie_ja", "vw_ubi_maritime_ja"],
+        "busan_vector_table": ["vw_ubi_attraction_ja", "vw_ubi_recommended_ja", "vw_ubi_foodie_ja", "vw_ubi_maritime_ja"],
+        "pg_vector_table": "tour_vector_jp",
+        "review_table": "ubi_cntnts_my_review",
+        "pg_restaurant_table": "tour_restaurant_distance_jp",
+        "lang_id": 11,
+        "keyword_mapping": {
+            "観光地": ["名所", "祭り", "グルメ旅行", "体験", "テーマ旅行"],
+            "レストラン": ["韓国料理", "中国料理", "日本料理", "アジア料理", "洋食", "海鮮料理", "グリル", "釜山シティバスグルメツアー", "世界料理", "オーシャンビューの レストラン", "ファインダイニング", "釜山の老舗"],
+            "カフェ": ["カフェ&スナック", "デザート＆コーヒー"]
+        }
+    }
+} 

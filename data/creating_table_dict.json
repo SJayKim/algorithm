@@ -1,0 +1,139 @@
+{
+    "meta_info": [
+        ["meta_id", "bigserial PRIMARY KEY"],
+        ["meta_name", "text"]
+    ],
+
+    "major_category": [
+        ["major_cat_id", "bigserial PRIMARY KEY"],
+        ["major_cat_name", "text"]
+    ],
+
+    "visit_busan_info": [
+        ["place_id", "bigserial Primary Key"], 
+        ["place_title", "text"], 
+        ["gugun_nm", "text"], 
+        ["cat1", "text"], 
+        ["cat2", "text"], 
+        ["lat", "float8"], 
+        ["lng", "float8"], 
+        ["addr", "text"], 
+        ["hash_tag", "text"], 
+        ["description", "text"], 
+        ["major_cat_id", "int"], 
+        ["foreign key (major_cat_id)", "references major_category(major_cat_id)"]
+    ],
+
+    "user_review": [
+        ["review_id", "bigserial Primary Key"],
+        ["place_id", "int"],
+        ["rating", "int"],
+        ["review", "text"],
+        ["foreign key (place_id)", "references visit_busan_info(place_id)"]
+    ],
+
+    "tour_place_meta": [
+        ["place_id", "int"],
+        ["meta_id", "int"],
+        ["foreign key (place_id)", "references visit_busan_info(place_id)"],
+        ["foreign key (meta_id)", "references meta_info(meta_id)"]
+    ],
+
+    "theme_category": [
+        ["theme_cat_id", "bigserial PRIMARY KEY"],
+        ["theme_cat_name", "text"]
+    ],
+
+    "tour_restaurant_distance": [
+        ["tour_place_id", "int"],
+        ["restaurant_id", "int"],
+        ["distance", "float8"],
+        ["cat", "text"],
+        ["foreign key (tour_place_id)", "references visit_busan_info(place_id)"],
+        ["foreign key (restaurant_id)", "references visit_busan_info(place_id)"]
+    ],
+
+    "tour_vector": [
+        ["place_id", "int"],
+        ["meta_vector", "vector(768)"],
+        ["overview_vector", "vector(768)"],
+        ["review_vector", "vector(768)"],
+        ["foreign key (place_id)", "references visit_busan_info(place_id)"]
+    ],
+
+    "tour_vector_jp": [
+        ["place_id", "int"],
+        ["meta_vector", "vector(500)"],
+        ["overview_vector", "vector(500)"],
+        ["review_vector", "vector(500)"]
+    ],
+
+    "tour_vector_cn_zh": [
+        ["place_id", "int"],
+        ["meta_vector", "vector(500)"],
+        ["overview_vector", "vector(500)"],
+        ["review_vector", "vector(500)"]
+    ],
+    
+    "tour_vector_cn_tw": [
+        ["place_id", "int"],
+        ["meta_vector", "vector(500)"],
+        ["overview_vector", "vector(500)"],
+        ["review_vector", "vector(500)"]
+    ],
+
+    "tour_vector_en": [
+        ["place_id", "int"],
+        ["meta_vector", "vector(500)"],
+        ["overview_vector", "vector(500)"],
+        ["review_vector", "vector(500)"]
+    ],
+
+    "search_theme_category": [
+        ["theme_cat_id", "bigserial PRIMARY KEY"],
+        ["theme_cat_ko", "text"],
+        ["theme_cat_cn_zh", "text"],
+        ["theme_cat_cn_tw", "text"],
+        ["theme_cat_jp", "text"],
+        ["theme_cat_en", "text"]
+    ],
+
+    "search_meta_info": [
+        ["meta_id", "bigserial PRIMARY KEY"],
+        ["meta_ko", "text"],
+        ["meta_cn_zh", "text"],
+        ["meta_cn_tw", "text"],
+        ["meta_jp", "text"],
+        ["meta_en", "text"],
+        ["theme_cat_id", "int"],
+        ["foreign key (theme_cat_id)", "references search_theme_category(theme_cat_id)"]
+    ],
+
+    "tour_restaurant_distance_en": [
+        ["tour_place_id", "int"],
+        ["restaurant_id", "int"],
+        ["distance", "float8"],
+        ["cat", "text"]
+    ],
+
+    "tour_restaurant_distance_cn_zh": [
+        ["tour_place_id", "int"],
+        ["restaurant_id", "int"],
+        ["distance", "float8"],
+        ["cat", "text"]
+    ],
+
+    "tour_restaurant_distance_cn_tw": [
+        ["tour_place_id", "int"],
+        ["restaurant_id", "int"],
+        ["distance", "float8"],
+        ["cat", "text"]
+    ],
+
+    "tour_restaurant_distance_jp": [
+        ["tour_place_id", "int"],
+        ["restaurant_id", "int"],
+        ["distance", "float8"],
+        ["cat", "text"]
+    ]
+}
